@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prototype Pattern Voorbeeld</title>
+</head>
+<body>
+  <h1>Prototype Design Pattern: Boek Klonen</h1>
+  
+  <div>
+    <h2>Origineel Boek</h2>
+    <p id="bookInfo">Titel: JavaScript voor Beginners, Auteur: John Doe</p>
+  </div>
+
+  <button id="cloneButton">Clone het Boek</button>
+
+  <h2>Gekloond Boek</h2>
+  <p id="clonedBookInfo"></p>
+
+  <script>
+    // Book is ons prototype
+    class Book {
+      constructor(title, author) {
+        this.title = title;
+        this.author = author;
+      }
+
+      // Kloonmethode om een kopie van het boek te maken
+      clone() {
+        return new Book(this.title, this.author);
+      }
+    }
+
+   
+  </script>
+</body>
+</html>
